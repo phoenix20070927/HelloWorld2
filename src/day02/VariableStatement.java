@@ -23,7 +23,7 @@ public class VariableStatement {
         int d;
         d = 4;
         //带有下划线'_'的数字字面量
-        int millions = 1_000_000; 
+        int millions = 1_000_000;
         System.out.println("c=="+c+" d="+d);
         System.out.println("millions = "+millions);
 

@@ -1,4 +1,4 @@
-package oo.day01;
+package oo.master.game;
 
 /**
  * Created by ClownK on 17/8/24.<br>
@@ -15,10 +15,12 @@ public class CellTest {
         System.out.println(ci);
         */
 
-        Cell c = new Cell();
-        c.row = 2;
-        c.col = 5;
+
+        Cell c = new Cell(2,5);
         printWall(c);
+        c.drop();
+        c.moveLeft();
+        c.moveRight();
 
 
 

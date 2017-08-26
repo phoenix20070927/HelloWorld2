@@ -1,4 +1,4 @@
-package oo.day01;
+package oo.master.game;
 
 /**
  * Created by ClownK on 17/8/24.<br>
@@ -16,16 +16,23 @@ public class Cell {
     int row;
     int col;
 
-    void drop(){
-        row++;
+    void drop()             { row++; }
+    void drop(int n)        { row +=n; }
+
+    void moveLeft(int n)    { col -= n; }
+    void moveLeft()         { col--; }
+
+    void moveRight(int n)   { col += n; }
+    void moveRight()        { col ++;}
+
+    Cell(){
+        row = 0;
+        col = 0;
     }
 
-    void moveLeft(int n) {
-        col -= n;
-    }
-
-    void moveRight(int n){
-        col += n;
+    Cell(int row, int col){
+        this.row = row;
+        this.col = col;
     }
 
     String getCellInfo(){

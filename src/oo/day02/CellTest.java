@@ -17,7 +17,7 @@ public class CellTest {
 
 
         Cell c = new Cell(2,5);
-        printWall(c);
+//        printWall(c);
         c.drop();
         c.moveLeft();
         c.moveRight();
@@ -26,16 +26,16 @@ public class CellTest {
 
     }
 
-    public static void printWall(Cell cc ){
-        for(int i = 0; i < 20; i++){
-            for (int j = 0; j < 10; j++) {
-                if (i == cc.row && j == cc.col)
-                    System.out.print("*");
-                else
-                    System.out.print("-");
-            }
-            System.out.println();
-        }
-    }
+//    public static void printWall(Cell cc ){
+//        for(int i = 0; i < 20; i++){
+//            for (int j = 0; j < 10; j++) {
+//                if (i == cc.row && j == cc.col)
+//                    System.out.print("*");
+//                else
+//                    System.out.print("-");
+//            }
+//            System.out.println();
+//        }
+//    }
 }
 
